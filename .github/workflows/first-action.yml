@@ -1,9 +1,9 @@
-name: First Workflow
-on: workflow_dispatch
+name: First Workflow              # name of the workflow
+on: workflow_dispatch             # on is when event should be triggerred.  workflow_dispatch ensures we can manually trigger it
 jobs:
   first-job: 
-    runs-on: ubuntu-latest
-    steps:
+    runs-on: ubuntu-latest          # runners are agents
+    steps:                          # steps are for running scripts
       - name: Print greeting
         run: echo "Hello world"
       - name: print goodbye
